@@ -6,7 +6,7 @@ const materialSchema = new mongoose.Schema({
   colors: { type: [String], required: true },
   pricePerGram: { type: Number, required: true },
   applicationTypes: { type: [String], required: true },
-  imageUrl: { type: String, required: true },
+  imageUrl: { type: String, required: true }
 });
 
 module.exports = mongoose.model('Material', materialSchema);
