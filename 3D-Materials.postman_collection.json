@@ -1,0 +1,642 @@
+{
+	"info": {
+		"_postman_id": "4486bfcc-16cd-442d-85b7-4203571419e3",
+		"name": "3D-Materials",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24106690"
+	},
+	"item": [
+		{
+			"name": "Get all materials",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/materials",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"materials"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/materials",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"materials"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "199"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c7-drgFeRhUQFtJ6GHNMG73GWNH7Dc\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Jun 2024 18:27:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"667f00186fa02a586d364be0\",\n        \"name\": \"PETG\",\n        \"technology\": \"FDM\",\n        \"colors\": [\n            \"[\\\"Transparent\\\",\\\"White\\\"]\"\n        ],\n        \"pricePerGram\": 0.04,\n        \"applicationTypes\": [\n            \"[\\\"Mechnical Parts\\\",\\\"Prototyping\\\"]\"\n        ],\n        \"__v\": 1\n    }\n]"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/materials",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"materials"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1352"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"548-phWTvOpSGvAXjimLRaCEjyfVFvs\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Jun 2024 18:56:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"667f0454bafb3a12242702d1\",\n        \"name\": \"PETG\",\n        \"technology\": \"FDM\",\n        \"colors\": [\n            \"[\\\"ransparent\\\",\\\"White\\\"]\"\n        ],\n        \"pricePerGram\": 0.04,\n        \"applicationTypes\": [\n            \"[\\\"Mechnical Parts\\\",\\\"Prototyping\\\"]\"\n        ],\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"667f0517bafb3a12242702d3\",\n        \"name\": \"PLA\",\n        \"technology\": \"FDM\",\n        \"colors\": [\n            \"[\\\"Red\\\",\\\"Blue\\\",\\\"Green\\\"]\"\n        ],\n        \"pricePerGram\": 0.03,\n        \"applicationTypes\": [\n            \"[\\\"Prototyping\\\",\\\"Educational\\\"]\"\n        ],\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"667f055ebafb3a12242702d5\",\n        \"name\": \"ABS\",\n        \"technology\": \"FDM\",\n        \"colors\": [\n            \"[\\\"Black\\\",\\\"White\\\"]\"\n        ],\n        \"pricePerGram\": 0.05,\n        \"applicationTypes\": [\n            \"[\\\"Mechanical Parts\\\",\\\"Prototyping\\\"]\"\n        ],\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"667f06c5bafb3a12242702d7\",\n        \"name\": \"Resin\",\n        \"technology\": \"SLA\",\n        \"colors\": [\n            \"[\\\"Clear\\\",\\\"Gray\\\"]\"\n        ],\n        \"pricePerGram\": 0.1,\n        \"applicationTypes\": [\n            \"[\\\"Dental\\\",\\\"Miniatures\\\"]\"\n        ],\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"667f070abafb3a12242702d9\",\n        \"name\": \"Nylon\",\n        \"technology\": \"SLS\",\n        \"colors\": [\n            \"[\\\"Natural\\\",\\\"Black\\\"]\"\n        ],\n        \"pricePerGram\": 0.07,\n        \"applicationTypes\": [\n            \"[\\\"Functioal Parts\\\",\\\"Prototyping\\\"]\"\n        ],\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"667f075bbafb3a12242702db\",\n        \"name\": \"TPU\",\n        \"technology\": \"FDM\",\n        \"colors\": [\n            \"[\\\"Black\\\",\\\"White\\\",\\\"Red\\\"]\"\n        ],\n        \"pricePerGram\": 0.08,\n        \"applicationTypes\": [\n            \"[\\\"Flexible Parts\\\",\\\"Wearables\\\"]\"\n        ],\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"667f0767bafb3a12242702dd\",\n        \"name\": \"TPU\",\n        \"technology\": \"FDM\",\n        \"colors\": [\n            \"[\\\"Black\\\",\\\"White\\\",\\\"Red\\\"]\"\n        ],\n        \"pricePerGram\": 0.08,\n        \"applicationTypes\": [\n            \"[\\\"Flexible Parts\\\",\\\"Wearables\\\"]\"\n        ],\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get material by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/materials/667f00186fa02a586d364be0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"materials",
+						"667f00186fa02a586d364be0"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/materials/667f00186fa02a586d364be0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"materials",
+								"667f00186fa02a586d364be0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "238"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ee-5Hfhzqw1cM+xrsRKFpz+pCQ9HXg\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Jun 2024 18:28:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"667f00186fa02a586d364be0\",\n    \"name\": \"PETG\",\n    \"technology\": \"FDM\",\n    \"colors\": [\n        \"[\\\"Transparent\\\",\\\"White\\\"]\"\n    ],\n    \"pricePerGram\": 0.04,\n    \"applicationTypes\": [\n        \"[\\\"Mechnical Parts\\\",\\\"Prototyping\\\"]\"\n    ],\n    \"imageUrl\": \"uploads\\\\1719599128942-.jpg\",\n    \"__v\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Material",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "TPU",
+							"type": "text"
+						},
+						{
+							"key": "technology",
+							"value": "FDM",
+							"type": "text"
+						},
+						{
+							"key": "colors",
+							"value": "[\"Black\",\"White\",\"Red\"]",
+							"type": "text"
+						},
+						{
+							"key": "pricePerGram",
+							"value": "0.08",
+							"type": "text"
+						},
+						{
+							"key": "applicationTypes",
+							"value": "[\"Flexible Parts\",\"Wearables\"]",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "postman-cloud:///1ef357bb-854a-47e0-9c60-71d28e049735"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/materials?image",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"materials"
+					],
+					"query": [
+						{
+							"key": "image",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Material",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "PETG",
+									"type": "text"
+								},
+								{
+									"key": "technology",
+									"value": "FDM",
+									"type": "text"
+								},
+								{
+									"key": "colors",
+									"value": "[\"ransparent\",\"White\"]",
+									"type": "text"
+								},
+								{
+									"key": "pricePerGram",
+									"value": "0.04",
+									"type": "text"
+								},
+								{
+									"key": "applicationTypes",
+									"value": "[\"Mechnical Parts\",\"Prototyping\"]",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1ef357bb-854a-47e0-9c60-71d28e049735"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/materials?image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"materials"
+							],
+							"query": [
+								{
+									"key": "image",
+									"value": null
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "237"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ed-6NEyheNq1eAhf+8vJq31G+5AKLE\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Jun 2024 18:25:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"PETG\",\n    \"technology\": \"FDM\",\n    \"colors\": [\n        \"[\\\"ransparent\\\",\\\"White\\\"]\"\n    ],\n    \"pricePerGram\": 0.04,\n    \"applicationTypes\": [\n        \"[\\\"Mechnical Parts\\\",\\\"Prototyping\\\"]\"\n    ],\n    \"imageUrl\": \"uploads\\\\1719599128942-.jpg\",\n    \"_id\": \"667f00186fa02a586d364be0\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "Create Material",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "TPU",
+									"type": "text"
+								},
+								{
+									"key": "technology",
+									"value": "FDM",
+									"type": "text"
+								},
+								{
+									"key": "colors",
+									"value": "[\"Black\",\"White\",\"Red\"]",
+									"type": "text"
+								},
+								{
+									"key": "pricePerGram",
+									"value": "0.08",
+									"type": "text"
+								},
+								{
+									"key": "applicationTypes",
+									"value": "[\"Flexible Parts\",\"Wearables\"]",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1ef357bb-854a-47e0-9c60-71d28e049735"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/materials?image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"materials"
+							],
+							"query": [
+								{
+									"key": "image",
+									"value": null
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "236"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ec-CyBovvL1EkmHq2hkkEaTYCoKkIw\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Jun 2024 18:56:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"TPU\",\n    \"technology\": \"FDM\",\n    \"colors\": [\n        \"[\\\"Black\\\",\\\"White\\\",\\\"Red\\\"]\"\n    ],\n    \"pricePerGram\": 0.08,\n    \"applicationTypes\": [\n        \"[\\\"Flexible Parts\\\",\\\"Wearables\\\"]\"\n    ],\n    \"imageUrl\": \"uploads\\\\1719600999671-.jpg\",\n    \"_id\": \"667f0767bafb3a12242702dd\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Materials",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "colors",
+							"value": "[\"Transparent\",\"White\"]",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/materials/667f00186fa02a586d364be0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"materials",
+						"667f00186fa02a586d364be0"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "colors",
+									"value": "[\"Transparent\",\"White\"]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/materials/667f00186fa02a586d364be0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"materials",
+								"667f00186fa02a586d364be0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "238"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ee-5Hfhzqw1cM+xrsRKFpz+pCQ9HXg\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Jun 2024 18:27:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"667f00186fa02a586d364be0\",\n    \"name\": \"PETG\",\n    \"technology\": \"FDM\",\n    \"colors\": [\n        \"[\\\"Transparent\\\",\\\"White\\\"]\"\n    ],\n    \"pricePerGram\": 0.04,\n    \"applicationTypes\": [\n        \"[\\\"Mechnical Parts\\\",\\\"Prototyping\\\"]\"\n    ],\n    \"imageUrl\": \"uploads\\\\1719599128942-.jpg\",\n    \"__v\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Materials",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/materials/667f00186fa02a586d364be0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"materials",
+						"667f00186fa02a586d364be0"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/materials/667f00186fa02a586d364be0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"materials",
+								"667f00186fa02a586d364be0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e-cj3rFmQ05wO8h216cBFVz5pgsaM\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Jun 2024 18:32:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Material deleted\"\n}"
+				}
+			]
+		}
+	]
+}
