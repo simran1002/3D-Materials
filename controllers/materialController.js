@@ -61,15 +61,16 @@ exports.updateMaterial = async (req, res) => {
   }
 };
 
+// Delete a material by ID
 exports.deleteMaterial = async (req, res) => {
-  try {
-    const material = await Material.findById(req.params.id);
-    if (!material) return res.status(404).json({ message: 'Material not found' });
-
-    if (material.imageUrl) fs.unlinkSync(path.resolve(material.imageUrl));
-    await material.remove();
-    res.json({ message: 'Material deleted' });
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
+    try {
+        const material = await Material.findById(req.params.id);
+        if (!material) {
+            return res.status(404).json({ message: 'Material not found' });
+        }
+        await Material.findByIdAndDelete(req.params.id); // Change to findByIdAndDelete
+        res.json({ message: 'Material deleted' });
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
 };
